@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#10110e" />
+    <meta name="referrer" content="no-referrer" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'" />
+    <meta name="description" content="Polter VPN. Koneksi privat, server Singapore, satu harga sederhana: Rp15.000 per bulan." />
+    <title>Polter VPN — Internet, tanpa batas yang terasa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/three@0.159.0/build/three.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script defer src="script.js"></script>
+    <script defer src="checkout.js"></script>
+  </head>
+  <body>
+    <div class="noise"></div>
+    <div class="bg-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="#home" aria-label="Polter VPN, ke atas">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>polter<span class="wordmark-light">vpn</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a href="#network">Jaringan</a>
+          <a href="#pricing">Harga</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="nav-cta" href="#pricing">Mulai berlangganan <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero-copy reveal" data-speed="0.9">
+            <div class="eyebrow"><span class="live-dot"></span> PRIVATE NETWORK, YOUR WAY</div>
+            <h1>Ruang bebas.<br /><span>Koneksi privat.</span></h1>
+            <p class="hero-description">Koneksi terenkripsi lewat Singapore. Untuk hari-hari yang lebih terhubung, dengan satu paket yang sederhana.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#pricing">Lihat paket <span aria-hidden="true">↗</span></a>
+              <button type="button" class="text-link know-polter-button" data-open-product aria-haspopup="dialog">Kenali Polter <span aria-hidden="true">↗</span></button>
+            </div>
+            <div class="hero-facts"><div><strong>Rp15rb<span>/bulan</span></strong><small>Satu harga sederhana</small></div><div><strong>50 GiB</strong><small>Kuota selama 30 hari</small></div><div><strong>Singapore</strong><small>Rute dekat Indonesia</small></div></div><div class="hero-footnote"><span class="footnote-line"></span> NO NOISE. JUST A BETTER CONNECTION.</div>
+          </div>
+
+          <div class="hero-visual" aria-label="Visualisasi interaktif jaringan Polter VPN" data-speed="1.1">
+            <div class="visual-grid" aria-hidden="true"></div>
+            <div class="orbit orbit-one" aria-hidden="true"></div>
+            <div class="orbit orbit-two" aria-hidden="true"></div>
+            <div class="globe-fallback" aria-hidden="true"></div><div class="globe-halo" aria-hidden="true"></div>
+            <canvas id="globe" aria-hidden="true"></canvas>
+            <div class="visual-label label-top"><span class="label-dot"></span> ENCRYPTED ROUTE <span class="label-code">01 / SG</span></div>
+            <div class="connection-card">
+              <div class="connection-top"><span>POLTER NETWORK</span><span class="connection-status"><i></i> SG / 01</span></div>
+              <div class="connection-destination"><span class="singapore-flag" aria-hidden="true">●</span><div><strong>Singapore</strong><small>SG · ASIA PACIFIC</small></div><span class="connection-arrow" aria-hidden="true">↗</span></div>
+              <div class="connection-bottom"><span>PRIVATE ROUTE</span><span class="signal-bars" aria-label="Sinyal kuat"><i></i><i></i><i></i><i></i></span></div>
+            </div>
+            <div class="visual-caption"><span>01</span> A MORE PRIVATE WAY THROUGH.</div>
+          </div>
+
+          <div class="hero-index" aria-hidden="true">EST. FOR OPEN INTERNET <span>—</span> 2026</div>
+        </section>
+
+        <section class="ticker" aria-label="Fitur utama">
+          <div class="ticker-track"><span>ONE TAP, PRIVATE ROUTE</span><b>✳</b><span>SINGAPORE SERVER</span><b>✳</b><span>JUST RP15K / MONTH</span><b>✳</b><span>ONE TAP, PRIVATE ROUTE</span><b>✳</b><span>SINGAPORE SERVER</span><b>✳</b><span>JUST RP15K / MONTH</span><b>✳</b></div>
+        </section>
+
+        <section class="network-section section-pad" id="network">
+          <div class="section-heading reveal" data-speed="1.05">
+            <span class="eyebrow"><span class="section-number">01</span> THE POLTER ROUTE</span>
+            <h2>Lebih tenang.<br /><span>Lebih terkoneksi.</span></h2>
+          </div>
+          <div class="network-content">
+            <div class="network-image reveal" role="img" aria-label="Cakrawala kota Singapore saat senja">
+              <div class="image-bg" data-speed="0.85"></div>
+              <div class="image-overlay"></div>
+              <div class="image-coordinate" data-speed="1.2"><span>1°17' N</span><span>103°50' E</span></div>
+              <div class="image-caption" data-speed="0.95"><span class="live-dot"></span> SINGAPORE, SG <span>01.2903° N / 103.8519° E</span></div>
+              <div class="image-stamp" data-speed="1.25">A BETTER<br />WAY THROUGH</div>
+            </div>
+            <div class="network-info reveal" data-speed="1.1">
+              <p class="network-lede">Koneksi publik seharusnya terasa lebih aman, bukan lebih rumit.</p>
+              <p class="network-body">Polter mengenkripsi lalu lintas internetmu dan mengarahkannya lewat server Singapore. Aktifkan saat dibutuhkan, lalu lanjutkan aktivitas seperti biasa.</p>
+              <div class="feature-list">
+                <div class="feature-row"><span class="feature-index">01</span><div><strong>Privasi di jaringan publik</strong><small>Tambahkan lapisan perlindungan saat terhubung ke Wi-Fi.</small></div><span class="feature-arrow">↗</span></div>
+                <div class="feature-row"><span class="feature-index">02</span><div><strong>Server Singapore</strong><small>Satu rute strategis dekat dengan Indonesia.</small></div><span class="feature-arrow">↗</span></div>
+                <div class="feature-row"><span class="feature-index">03</span><div><strong>Harga tanpa kejutan</strong><small>Rp15.000 untuk satu bulan. Tanpa paket bertingkat.</small></div><span class="feature-arrow">↗</span></div>
+              </div>
+              <p class="fine-print">Kecepatan dan ketersediaan dapat berubah mengikuti kondisi jaringan, perangkat, serta lokasi.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="features-section section-pad" id="features">
+          <div class="features-stage">
+            <div class="section-heading reveal">
+              <span class="eyebrow"><span class="section-number">02</span> ADVANCED TECH</span>
+              <h2>Teknologi yang<br /><span>bekerja dalam diam.</span></h2>
+              <p class="features-subtitle">Infrastruktur modern yang dibangun untuk performa dan privasi.</p>
+            </div>
+            <div class="features-viewport" tabindex="0" role="region" aria-label="Fitur Polter VPN. Geser ke samping atau gunakan tombol panah untuk melihat fitur lainnya.">
+              <div class="features-track">
+                <article class="feature-card">
+                  <div class="fc-icon"><i></i></div>
+                  <h3>Koneksi Terenkripsi</h3>
+                  <p>Lalu lintas internet melewati koneksi terenkripsi saat terhubung ke server Polter, termasuk ketika memakai Wi-Fi publik.</p>
+                </article>
+                <article class="feature-card">
+                  <div class="fc-icon"><i></i></div>
+                  <h3>Rute Singapore</h3>
+                  <p>Arahkan koneksi melalui server Singapore, rute yang tersedia saat ini untuk pelanggan Polter VPN.</p>
+                </article>
+                <article class="feature-card">
+                  <div class="fc-icon"><i></i></div>
+                  <h3>Aktif Saat Dibutuhkan</h3>
+                  <p>Nyalakan Polter ketika kamu membutuhkan koneksi privat, lalu lanjutkan aktivitas seperti biasa.</p>
+                </article>
+                <article class="feature-card">
+                  <div class="fc-icon"><i></i></div>
+                  <h3>Satu Harga Sederhana</h3>
+                  <p>Satu paket seharga Rp15.000 per bulan, tanpa pilihan paket bertingkat yang membingungkan.</p>
+                </article>
+                <article class="feature-card">
+                  <div class="fc-icon"><i></i></div>
+                  <h3>Masa Aktif 30 Hari</h3>
+                  <p>Satu kali aktivasi memberi akses selama 30 hari. Perpanjang saat masa aktif hampir habis.</p>
+                </article>
+                <article class="feature-card">
+                  <div class="fc-icon"><i></i></div>
+                  <h3>Bantuan Aktivasi</h3>
+                  <p>Akun dan QR dibuat otomatis setelah pembayaran terverifikasi.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pricing-section section-pad" id="pricing">
+          <div class="pricing-heading reveal" data-speed="1.05">
+            <span class="eyebrow"><span class="section-number">03</span> ONE PLAN, NO SURPRISES</span>
+            <h2>Simple by<br /><span>design.</span></h2>
+            <p>Satu paket untuk langsung mulai. Perpanjang saat kamu siap.</p>
+          </div>
+          <div class="pricing-layout">
+            <div class="price-card reveal" data-speed="0.98">
+              <div class="card-glow"></div>
+              <div class="price-card-top"><span>POLTER / MONTHLY</span><span class="plan-badge">SIMPLE PLAN</span></div>
+              <div class="price-value"><span class="currency">Rp</span><span class="amount">15.000</span><span class="period">/ bulan</span></div>
+              <p class="price-intro">Semua yang kamu butuhkan untuk mulai memakai Polter VPN.</p>
+              <div class="plan-divider"></div>
+              <ul class="plan-features">
+                <li><span>+</span> Server Singapore</li>
+                <li><span>+</span> Koneksi terenkripsi</li>
+                <li><span>+</span> Masa aktif 30 hari</li>
+                <li><span>+</span> Kuota 50 GiB selama 30 hari</li>
+              </ul>
+
+              <button type="button" class="button button-dark subscribe-button" data-open-subscription>
+                Mulai berlangganan <span aria-hidden="true">↗</span>
+              </button>
+
+              <p class="price-note">Akun dan QR tersedia setelah pembayaran terverifikasi.</p>
+              <div class="card-index">POLTER VPN <span>—</span> 001</div>
+            </div>
+            <div class="pricing-aside reveal" data-speed="1.15">
+              <div class="aside-mark" aria-hidden="true" data-speed="0.85">P.</div>
+              <p class="aside-quote">“Koneksi yang lebih privat mestinya bisa dimulai dari harga yang sederhana.”</p>
+              <a href="https://wa.me/?text=Halo%20admin%20Polter%20VPN%2C%20saya%20ingin%20bertanya%20tentang%20layanannya." target="_blank" rel="noopener noreferrer" class="text-link">Tanya admin dulu <span aria-hidden="true">↗</span></a>
+              <div class="aside-meta"><span>AVAILABLE NOW</span><span>SG / 01</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="faq-section section-pad" id="faq">
+          <div class="faq-heading reveal" data-speed="1.05"><span class="eyebrow"><span class="section-number">04</span> GOOD TO KNOW</span><h2>Beberapa hal<br /><span>yang sering ditanya.</span></h2></div>
+          <div class="faq-list reveal" data-speed="0.95">
+            <details><summary>Bagaimana cara mulai berlangganan?<span>+</span></summary><p>Isi username pilihanmu, lalu lanjut ke WhatsApp admin. Setelah bayar QRIS dan admin mengonfirmasi uang masuk, akun serta QR VPN muncul otomatis di halaman pesanan.</p></details>
+            <details><summary>Berapa lama masa aktif paketnya?<span>+</span></summary><p>Paket Rp15.000 berlaku selama 30 hari. Hubungi admin untuk perpanjangan saat masa aktif hampir habis.</p></details>
+            <details><summary>Server apa yang tersedia?<span>+</span></summary><p>Saat ini Polter VPN menawarkan server Singapore. Informasi performa dan ketersediaan terkini bisa ditanyakan langsung ke admin.</p></details>
+            <details><summary>Apakah Polter VPN membuat saya sepenuhnya anonim?<span>+</span></summary><p>Tidak. VPN membantu mengenkripsi koneksi dan menyamarkan alamat IP dari situs yang dikunjungi, tetapi tidak membuat aktivitasmu sepenuhnya anonim. Tetap jaga keamanan akun dan perangkatmu.</p></details>
+          </div>
+        </section>
+
+        <section class="closing-cta">
+          <div class="closing-orbit" aria-hidden="true" data-speed="0.8"></div>
+          <div class="closing-content reveal" data-speed="1.1"><span class="eyebrow"><span class="live-dot"></span> READY WHEN YOU ARE</span><h2>Take the<br /><span>private route.</span></h2><a class="button button-primary" href="https://wa.me/?text=Halo%20admin%20Polter%20VPN%2C%20saya%20ingin%20mulai%20berlangganan." target="_blank" rel="noopener noreferrer">Hubungi admin <span aria-hidden="true">↗</span></a></div>
+          <span class="closing-coordinate" data-speed="1.2">1°17' N<br />103°50' E</span>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <a class="wordmark" href="#home" aria-label="Polter VPN, ke atas"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>polter<span class="wordmark-light">vpn</span></span></a>
+        <span class="footer-note">A LITTLE MORE PRIVATE, EVERY DAY.</span>
+        <span class="footer-copy">© 2026 POLTER VPN <span>·</span> MADE FOR OPEN INTERNET.</span>
+        <a class="back-top" href="#home">KEMBALI KE ATAS ↑</a>
+      </footer>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-progress" role="progressbar" aria-label="Progres membaca halaman" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <span class="scroll-progress-track"><i></i></span>
+      <span class="scroll-progress-value">00%</span>
+    </div>
+    <div class="custom-cursor" aria-hidden="true"><span class="cursor-ring"><i></i><span></span></span></div>
+    <dialog class="subscription-dialog" id="subscription-dialog" aria-labelledby="subscription-title">
+      <div class="subscription-modal">
+        <button type="button" class="modal-close" data-close-subscription aria-label="Tutup">&times;</button>
+        <span class="eyebrow"><span class="live-dot"></span> POLTER / MONTHLY</span>
+        <h2 id="subscription-title">Mulai berlangganan</h2>
+        <p class="modal-intro">Isi username pilihanmu dan salah satu kontak: email atau nomor HP.</p>
+        <form id="manual-form" class="tripay-form">
+          <label>Username<input type="text" name="username" autocomplete="off" minlength="2" maxlength="40" placeholder="Contoh: nebula7x" required /></label>
+          <p class="product-note">Gunakan nama panggilan 2-40 karakter, tanpa perlu nama asli.</p>
+          <label>Pilih kontak<select name="contactType" id="contact-type" required><option value="email">Email (Gmail atau lainnya)</option><option value="phone">Nomor HP</option></select></label>
+          <label><span id="contact-label">Email</span><input id="customer-contact" type="email" name="contact" autocomplete="email" maxlength="254" placeholder="contoh@gmail.com" required /></label>
+          <p class="product-note">Cukup isi satu kontak. Kontak disimpan bersama pesanan dan disertakan dalam pesan ke admin.</p>
+          <p>Paket 30 hari / 50 GiB - Rp15.000</p>
+          <p class="product-note">Pesanan disimpan otomatis, lalu WhatsApp admin terbuka dengan pesan siap kirim. Nomor WhatsAppmu terlihat oleh admin saat mengirim chat. Bayar setelah menerima QRIS dari admin; akun aktif setelah uang masuk diperiksa.</p>
+          <button type="submit" class="button button-dark tripay-button" disabled>Pesan lewat WhatsApp</button>
+        </form>
+        <a id="resume-order" class="text-link" hidden>Buka pesanan terakhir</a>
+        <div id="tripay-status" class="tripay-status" aria-live="polite"></div>
+      </div>
+    </dialog>
+    <dialog class="subscription-dialog product-dialog" id="product-dialog" aria-labelledby="product-title">
+      <div class="subscription-modal">
+        <button type="button" class="modal-close" data-close-product aria-label="Tutup">&times;</button>
+        <span class="eyebrow"><span class="live-dot"></span> POLTER VPN / PRODUCT DETAILS</span>
+        <h2 id="product-title">Polter VPN</h2>
+        <p class="modal-intro">Koneksi privat dengan rute server Singapore. Satu paket sederhana untuk pemakaian selama 30 hari.</p>
+        <dl class="product-specs">
+          <div><dt>Server</dt><dd>Singapore</dd></div>
+          <div><dt>Perlindungan</dt><dd>Koneksi internet terenkripsi</dd></div>
+          <div><dt>Masa aktif</dt><dd>30 hari sejak aktivasi</dd></div>
+          <div><dt>Harga</dt><dd>Rp15.000 / bulan</dd></div>
+          <div><dt>Bantuan</dt><dd>Aktivasi otomatis setelah pembayaran terverifikasi</dd></div>
+        </dl>
+        <p class="product-note">Kecepatan dan ketersediaan mengikuti kondisi jaringan, perangkat, serta lokasi. VPN membantu menjaga privasi koneksi, tetapi tidak membuat aktivitas online sepenuhnya anonim.</p>
+        <button type="button" class="button button-primary product-subscribe" data-open-subscription>Mulai berlangganan <span aria-hidden="true">↗</span></button>
+      </div>
+    </dialog>
+  </body>
+</html>
